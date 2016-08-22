@@ -70,4 +70,12 @@ public class TestUser {
         User user = userDaoImpl.findOne(params, collectionName);
         System.out.println("user==" + user);
     }
+
+    @Test
+    public void testQuery() {
+        Map<String, Object> params = new HashMap<String, Object>();
+        params.put("id", "1");
+        User user = userDaoImpl.findOne(params, collectionName);
+        System.out.println("user.name===" + user.getName());
+    }
 }
