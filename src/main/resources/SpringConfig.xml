@@ -17,5 +17,7 @@
         <constructor-arg name="databaseName" value="seal"/>
     </bean>
 
-    <bean name="userDaoImpl" class="com.havens.seal.dao.UserDaoImpl"/>
+    <bean name="userDaoImpl" class="com.havens.seal.dao.UserDaoImpl">
+        <constructor-arg ref="mongoTemplate"/>
+    </bean>
 </beans>

@@ -2,11 +2,7 @@ package com.havens.seal;
 
 import com.mongodb.DB;
 import com.mongodb.Mongo;
-import com.mongodb.MongoClient;
-import com.mongodb.ServerAddress;
 import org.junit.Test;
-import org.springframework.data.mongodb.core.MongoOperations;
-import org.springframework.data.mongodb.core.MongoTemplate;
 
 import java.util.Set;
 

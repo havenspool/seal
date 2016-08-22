@@ -22,6 +22,10 @@ public class UserDaoImpl implements UserDao {
     @Resource
     private MongoTemplate mongoTemplate;
 
+    public UserDaoImpl(MongoTemplate mongoTemplate){
+        this.mongoTemplate=mongoTemplate;
+    }
+
     @Override
     public void insert(User object, String collectionName) {
         mongoTemplate.insert(object, collectionName);
